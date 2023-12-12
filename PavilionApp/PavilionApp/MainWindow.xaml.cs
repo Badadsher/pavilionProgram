@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PavilionApp.View;
 
 namespace PavilionApp
 {
@@ -23,6 +24,8 @@ namespace PavilionApp
         public MainWindow()
         {
             InitializeComponent();
-        }
+            MainFrame.Navigate(new SignIn());        }
+
+     
     }
 }
