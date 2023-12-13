@@ -160,7 +160,7 @@
         <PasswordBox Style="{DynamicResource PasswordBoxStyle1}" HorizontalAlignment="Center" Margin="0,237,0,0" VerticalAlignment="Top" Width="310" Height="50" VerticalContentAlignment="Center" FontFamily="Arial" HorizontalContentAlignment="Center" SelectionBrush="#FFFF9933" BorderBrush="#FF1B1B1B"/>
         <TextBlock  Margin="359,129,-359,0" TextWrapping="Wrap" Text="АВТОРИЗАЦИЯ" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontSize="10" FontWeight="Bold"/>
         <TextBlock  Margin="0,24,0,0" TextWrapping="Wrap" Text="PAVILIONAPP" TextAlignment="Center" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontSize="14" FontWeight="Bold"/>
-        <Button x:Name="SignInBT" Style="{DynamicResource ButtonStyle1}"  Content="ВХОД" HorizontalAlignment="Center" Margin="0,307,0,0" VerticalAlignment="Top" Height="39" Width="188" Background="#FBFF9C1A" Foreground="White" BorderBrush="Transparent" FontFamily="Arial" Click="SignInBT_Click"/>
+        <Button x:Name="SignInBT" Style="{DynamicResource ButtonStyle1}"  Content="ВХОД" HorizontalAlignment="Center" Margin="0,307,0,0" VerticalAlignment="Top" Height="39" Width="188" Background="#FBFF9C1A" Foreground="White" BorderBrush="Transparent" FontFamily="Arial" Click="SignInBT_Click_1"/>
         <Rectangle HorizontalAlignment="Left" Height="64" Margin="728,0,0,0" VerticalAlignment="Top" Width="62">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Images/logo.jpg"/>

@@ -24,5 +24,16 @@ namespace PavilionApp.View.Managers.managerA
         {
             InitializeComponent();
         }
+
+        private void procentBT_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ProcentPage());
+        }
+
+        private void pavilionBT_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new PavilionPage());
+
+        }
     }
 }

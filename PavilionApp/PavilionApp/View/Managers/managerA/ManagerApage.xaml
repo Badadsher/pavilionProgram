@@ -14,5 +14,18 @@
                 <ImageBrush ImageSource="/Images/logo.jpg"/>
             </Rectangle.Fill>
         </Rectangle>
+        <Button x:Name="procentBT"  HorizontalAlignment="Left" Margin="238,0,0,0" VerticalAlignment="Center" Height="118" Width="133" BorderBrush="#00707070" Click="procentBT_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/interface.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Интерфейс окупаемости " HorizontalAlignment="Left" Margin="222,285,0,0" VerticalAlignment="Top" Height="32" Width="164" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF37474F"/>
+        <Label Content="Ваша роль: Менеджер А" HorizontalAlignment="Left" Margin="10,14,0,0" VerticalAlignment="Top" Height="32" Width="231" FontFamily="Arial" FontWeight="Bold"/>
+        <Button x:Name="pavilionBT"  HorizontalAlignment="Left" Margin="448,150,0,0" VerticalAlignment="Top"  Height="118" Width="134" BorderBrush="#00707070" Click="pavilionBT_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/tower.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Интерфейс списка ТЦ" HorizontalAlignment="Left" Margin="435,285,0,0" VerticalAlignment="Top" Height="32" Width="164" HorizontalContentAlignment="Center" FontFamily="Arial" Foreground="#FF37474F"/>
     </Grid>
 </Page>

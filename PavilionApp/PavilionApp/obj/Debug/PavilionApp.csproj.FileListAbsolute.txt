@@ -45,3 +45,13 @@ E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.exe
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.pdb
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\CapchaPage.g.cs
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\CapchaPage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Admin\AdminPage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ManagerApage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\PavilionPage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ProcentPage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\ManagerCpage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Admin\AdminPage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ManagerApage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\PavilionPage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ProcentPage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\ManagerCpage.baml

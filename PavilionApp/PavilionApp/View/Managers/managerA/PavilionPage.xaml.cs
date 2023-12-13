@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PavilionApp.View
+namespace PavilionApp.View.Managers.managerA
 {
     /// <summary>
-    /// Логика взаимодействия для AdminPage.xaml
+    /// Логика взаимодействия для PavilionPage.xaml
     /// </summary>
-    public partial class AdminPage : Page
+    public partial class PavilionPage : Page
     {
-        public AdminPage()
+        public PavilionPage()
         {
             InitializeComponent();
         }

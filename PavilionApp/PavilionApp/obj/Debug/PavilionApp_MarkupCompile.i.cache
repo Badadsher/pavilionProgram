@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\App.xaml
-6-32454669
+8-132077289
 
-12-1497313975
+14547343053
 16146665653
-MainWindow.xaml;View\AdminPage.xaml;View\CapchaPage.xaml;View\Managers\managerA\ManagerApage.xaml;View\Managers\managerC\ManagerCpage.xaml;View\SignIn.xaml;
+MainWindow.xaml;View\Admin\AdminPage.xaml;View\CapchaPage.xaml;View\Managers\managerA\ManagerApage.xaml;View\Managers\managerA\PavilionPage.xaml;View\Managers\managerA\ProcentPage.xaml;View\Managers\managerC\ManagerCpage.xaml;View\SignIn.xaml;
 
 True
 

@@ -12,24 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using PavilionApp.View;
-using PavilionApp.View.Managers.managerA;
 
-namespace PavilionApp.View.Managers.managerC
+namespace PavilionApp.View.Admin
 {
     /// <summary>
-    /// Логика взаимодействия для ManagerCpage.xaml
+    /// Логика взаимодействия для AdminPage.xaml
     /// </summary>
-    public partial class ManagerCpage : Page
+    public partial class AdminPage : Page
     {
-        public ManagerCpage()
+        public AdminPage()
         {
             InitializeComponent();
-        }
-
-        private void pavilionBT_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new PavilionPage());
         }
     }
 }

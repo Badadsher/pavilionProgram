@@ -29,25 +29,22 @@ namespace PavilionApp.View
             InitializeComponent();
         }
 
-        private void SignInBT_Click(object sender, RoutedEventArgs e)
-        {
-            
-          
-                tryCount++;
-                CheckCapcha();
-            
-        }
+     
 
         private void CheckCapcha()
         {
             if(tryCount > 3) {
                 NavigationService.Navigate(new CapchaPage());
+                tryCount = 0;
             }
         }
 
-        private void SignInPage_Navigated(object sender, NavigationEventArgs e)
-        {
+      
 
+        private void SignInBT_Click_1(object sender, RoutedEventArgs e)
+        {
+            tryCount++;
+            CheckCapcha();
         }
     }
 }
