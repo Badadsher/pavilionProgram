@@ -1,0 +1,18 @@
+﻿<Page x:Class="PavilionApp.View.Managers.managerA.ManagerApage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PavilionApp.View.Managers.managerA"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ManagerApage">
+
+    <Grid Background="White">
+        <Rectangle HorizontalAlignment="Left" Height="64" Margin="728,0,0,0" VerticalAlignment="Top" Width="62">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="/Images/logo.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</Page>

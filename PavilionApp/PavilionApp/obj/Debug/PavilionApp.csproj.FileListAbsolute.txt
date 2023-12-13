@@ -21,3 +21,27 @@ C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionA
 C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.csproj.CopyComplete
 C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.exe
 C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.pdb
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\PavilionApp.exe.config
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\PavilionApp.exe
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\PavilionApp.pdb
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\EntityFramework.dll
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\EntityFramework.SqlServer.dll
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\EntityFramework.xml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\EntityFramework.SqlServer.xml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.csproj.AssemblyReference.cache
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\MainWindow.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\SignIn.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\App.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp_MarkupCompile.cache
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp_MarkupCompile.lref
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\MainWindow.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\SignIn.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.g.resources
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.Properties.Resources.resources
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.csproj.GenerateResource.cache
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.csproj.CoreCompileInputs.cache
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.csproj.CopyComplete
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.exe
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.pdb
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\CapchaPage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\CapchaPage.baml

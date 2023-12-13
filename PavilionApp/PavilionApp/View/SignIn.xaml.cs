@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PavilionApp.View;
 
+
 namespace PavilionApp.View
 {
     /// <summary>
@@ -21,9 +22,32 @@ namespace PavilionApp.View
     /// </summary>
     public partial class SignIn : Page
     {
+        private int tryCount = 0;
+
         public SignIn()
         {
             InitializeComponent();
+        }
+
+        private void SignInBT_Click(object sender, RoutedEventArgs e)
+        {
+            
+          
+                tryCount++;
+                CheckCapcha();
+            
+        }
+
+        private void CheckCapcha()
+        {
+            if(tryCount > 3) {
+                NavigationService.Navigate(new CapchaPage());
+            }
+        }
+
+        private void SignInPage_Navigated(object sender, NavigationEventArgs e)
+        {
+
         }
     }
 }

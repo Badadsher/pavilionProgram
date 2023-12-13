@@ -21,3 +21,25 @@ C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionA
 C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.csproj.CopyComplete
 C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.exe
 C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.pdb
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Release\PavilionApp.exe.config
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Release\PavilionApp.exe
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Release\PavilionApp.pdb
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Release\EntityFramework.dll
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Release\EntityFramework.SqlServer.dll
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Release\EntityFramework.xml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Release\EntityFramework.SqlServer.xml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.csproj.AssemblyReference.cache
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\MainWindow.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\View\SignIn.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\App.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp_MarkupCompile.cache
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp_MarkupCompile.lref
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\MainWindow.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\View\SignIn.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.g.resources
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.Properties.Resources.resources
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.csproj.GenerateResource.cache
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.csproj.CoreCompileInputs.cache
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.csproj.CopyComplete
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.exe
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\PavilionApp.pdb

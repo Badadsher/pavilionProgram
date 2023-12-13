@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Release\
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Release\
 PavilionApp
 none
 false
 TRACE
-C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\App.xaml
-2-1887308772
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\App.xaml
+3326002200
 
-6-1240428066
-16-396225665
-MainWindow.xaml;View\SignIn.xaml;
+81694993870
+16146665653
+MainWindow.xaml;View\CapchaPage.xaml;View\SignIn.xaml;
 
-False
+True
 
