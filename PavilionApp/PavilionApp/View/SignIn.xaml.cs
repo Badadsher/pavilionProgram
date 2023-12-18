@@ -12,8 +12,11 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using PavilionApp.Model;
 using PavilionApp.View;
-
+using PavilionApp.View.Admin;
+using PavilionApp.View.Managers.managerA;
+using PavilionApp.View.Managers.managerC;
 
 namespace PavilionApp.View
 {
@@ -27,8 +30,10 @@ namespace PavilionApp.View
         public SignIn()
         {
             InitializeComponent();
+            
         }
 
+        
      
 
         private void CheckCapcha()
@@ -39,12 +44,40 @@ namespace PavilionApp.View
             }
         }
 
-      
+
 
         private void SignInBT_Click_1(object sender, RoutedEventArgs e)
         {
-            tryCount++;
-            CheckCapcha();
+            var currentUser = AppData.db.Users.FirstOrDefault(u => u.Login == loginBox.Text && u.Password == PasswordBox.Password);
+
+            try
+            {
+               if(currentUser != null && currentUser.Role == 1)
+                {
+                    NavigationService.Navigate(new AdminPage());
+                }
+
+               else if(currentUser != null && currentUser.Role == 2)
+                {
+                    NavigationService.Navigate(new ManagerApage());
+                }
+               else if(currentUser != null && currentUser.Role == 3)
+                {
+                    NavigationService.Navigate(new ManagerCpage());
+                }
+                else
+                {
+                    tryCount++;
+                    CheckCapcha();
+                }
+               
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка");
+            }
+        
         }
+
     }
 }

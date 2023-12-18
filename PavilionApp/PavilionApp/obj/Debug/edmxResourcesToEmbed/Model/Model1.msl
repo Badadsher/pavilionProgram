@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище pavilionDBModelContainer" CdmEntityContainer="pavilionDBEntities">
+    <EntitySetMapping Name="Arendators">
+      <EntityTypeMapping TypeName="pavilionDBModel.Arendators">
+        <MappingFragment StoreEntitySet="Arendators">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Occupancy">
+      <EntityTypeMapping TypeName="pavilionDBModel.Occupancy">
+        <MappingFragment StoreEntitySet="Occupancy">
+          <ScalarProperty Name="ID_occupancy" ColumnName="ID occupancy" />
+          <ScalarProperty Name="ID_rent_host" ColumnName="ID rent_host" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID_Employee" ColumnName="ID Employee" />
+          <ScalarProperty Name="Pavilion" ColumnName="Pavilion" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Start_Occupancy" ColumnName="Start_Occupancy" />
+          <ScalarProperty Name="End_Occupancy" ColumnName="End_Occupancy" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="pavilionDBModel.Users">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Gender" ColumnName="Gender" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pavilions">
+      <EntityTypeMapping TypeName="pavilionDBModel.Pavilions">
+        <MappingFragment StoreEntitySet="Pavilions">
+          <ScalarProperty Name="Name_TM" ColumnName="Name_TM" />
+          <ScalarProperty Name="PavilionNumber" ColumnName="PavilionNumber" />
+          <ScalarProperty Name="FloorNumber" ColumnName="FloorNumber" />
+          <ScalarProperty Name="MetrPrice" ColumnName="MetrPrice" />
+          <ScalarProperty Name="AddedValue" ColumnName="AddedValue" />
+          <ScalarProperty Name="Area" ColumnName="Area" />
+          <ScalarProperty Name="StatusPavilion" ColumnName="StatusPavilion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TradeList">
+      <EntityTypeMapping TypeName="pavilionDBModel.TradeList">
+        <MappingFragment StoreEntitySet="TradeList">
+          <ScalarProperty Name="NameTrade" ColumnName="NameTrade" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PavilionsCount" ColumnName="PavilionsCount" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PriceBuilding" ColumnName="PriceBuilding" />
+          <ScalarProperty Name="AddedValueTrade" ColumnName="AddedValueTrade" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="imageTrade" ColumnName="imageTrade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

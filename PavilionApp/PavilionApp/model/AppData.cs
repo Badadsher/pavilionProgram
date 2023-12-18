@@ -8,6 +8,6 @@ namespace PavilionApp.Model
 {
     public static class AppData
     {
-        
+        public static pavilionDBEntities db = new pavilionDBEntities();
     }
 }

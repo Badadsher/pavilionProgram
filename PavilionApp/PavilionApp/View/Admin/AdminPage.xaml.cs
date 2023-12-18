@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PavilionApp.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace PavilionApp.View.Admin
         public AdminPage()
         {
             InitializeComponent();
+
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            usersGrid.ItemsSource = AppData.db.Users.ToList();
         }
     }
 }

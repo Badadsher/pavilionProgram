@@ -55,3 +55,4 @@ E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\mana
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\PavilionPage.baml
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ProcentPage.baml
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\ManagerCpage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp_Content.g.cs
