@@ -24,7 +24,8 @@ namespace PavilionApp
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new SignIn());        }
+            MainFrame.Navigate(new SignIn());      
+        }
 
      
     }

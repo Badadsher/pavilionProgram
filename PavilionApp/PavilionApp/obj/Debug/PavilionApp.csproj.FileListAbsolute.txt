@@ -56,3 +56,16 @@ E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\mana
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ProcentPage.baml
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\ManagerCpage.baml
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp_Content.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Admin\AdminPage.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\CapchaPage.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ManagerApage.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\PavilionPage.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ProcentPage.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\ManagerCpage.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp_Content.g.cs
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Admin\AdminPage.baml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\CapchaPage.baml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ManagerApage.baml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\PavilionPage.baml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ProcentPage.baml
+C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\ManagerCpage.baml

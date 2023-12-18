@@ -29,7 +29,7 @@ namespace PavilionApp.View.Managers.managerC
 
         private void pavilionBT_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new PavilionPage());
+            NavigationService.Navigate(new tradeList());
         }
     }
 }

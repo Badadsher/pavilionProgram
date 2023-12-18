@@ -48,7 +48,7 @@ namespace PavilionApp.View
 
         private void SignInBT_Click_1(object sender, RoutedEventArgs e)
         {
-            var currentUser = AppData.db.Users.FirstOrDefault(u => u.Login == loginBox.Text && u.Password == PasswordBox.Password);
+            var currentUser = AppData.db.Users.FirstOrDefault(u => u.Login == loginBox.Text.ToLower() && u.Password.ToLower() == PasswordBox.Password.ToLower());
 
             try
             {
