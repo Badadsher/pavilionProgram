@@ -30,10 +30,11 @@ namespace PavilionApp.View.Managers.managerA
             NavigationService.Navigate(new ProcentPage());
         }
 
-        private void pavilionBT_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new PavilionPage());
+      
 
+        private void arendatorsBT(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ArendatorsPage());
         }
     }
 }

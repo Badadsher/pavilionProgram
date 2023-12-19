@@ -34,7 +34,7 @@ namespace PavilionApp.View.Admin
         {
             try
             {
-                if (nameBox.Text != null && surnameBox.Text != null && patronymicBox.Text != null && loginBox.Text != null && passwordBox.Text != null && roleBox.Text != null && genderBox.Text != null && nubmerBox.Text != null)
+                if (!string.IsNullOrEmpty(nameBox.Text) && !string.IsNullOrEmpty(surnameBox.Text)  && !string.IsNullOrEmpty(patronymicBox.Text) && !string.IsNullOrEmpty(loginBox.Text) && !string.IsNullOrEmpty(passwordBox.Text) && !string.IsNullOrEmpty(roleBox.Text) && !string.IsNullOrEmpty(genderBox.Text) && !string.IsNullOrEmpty(nubmerBox.Text))
                 {
                     Users person = new Users();
                     person.Login = loginBox.Text.ToLower();

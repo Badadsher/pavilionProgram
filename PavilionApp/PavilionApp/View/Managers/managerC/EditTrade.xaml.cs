@@ -38,7 +38,7 @@ namespace PavilionApp.View.Managers.managerC
 
             try
             {
-                if (tradenameBox.Text != null && statusBox.Text != null && countBox.Text != null && cityBox.Text != null && coofBox.Text != null && priceBox.Text != null && floorBox.Text != null)
+                if (!string.IsNullOrEmpty(tradenameBox.Text)  && !string.IsNullOrEmpty(statusBox.Text) && !string.IsNullOrEmpty(countBox.Text) && !string.IsNullOrEmpty(cityBox.Text) && !string.IsNullOrEmpty(coofBox.Text) && !string.IsNullOrEmpty(priceBox.Text) && !string.IsNullOrEmpty(floorBox.Text))
                 {
                     curTrade.NameTrade = tradenameBox.Text;
                     curTrade.Status = statusBox.Text;
@@ -60,6 +60,11 @@ namespace PavilionApp.View.Managers.managerC
             {
                 MessageBox.Show("Ошибка");
             }
+        }
+
+        private void Page_Loaded_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -40,8 +40,8 @@ namespace PavilionApp.View.Managers.managerC
         {
             try
             {
-                var curTrade = tradeGrid.SelectedItem as Users;
-                AppData.db.Users.Remove(curTrade);
+                var curTrade = tradeGrid.SelectedItem as TradeList;
+                AppData.db.TradeList.Remove(curTrade);
                 AppData.db.SaveChanges();
 
                 tradeGrid.ItemsSource = AppData.db.TradeList.ToList();

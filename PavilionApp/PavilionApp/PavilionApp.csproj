@@ -110,6 +110,12 @@
     <Compile Include="View\CapchaPage.xaml.cs">
       <DependentUpon>CapchaPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Managers\managerA\addRentPage.xaml.cs">
+      <DependentUpon>addRentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Managers\managerA\ArendatorsPage.xaml.cs">
+      <DependentUpon>ArendatorsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Managers\managerA\ManagerApage.xaml.cs">
       <DependentUpon>ManagerApage.xaml</DependentUpon>
     </Compile>
@@ -121,6 +127,9 @@
     </Compile>
     <Compile Include="View\Managers\managerC\AddTrade.xaml.cs">
       <DependentUpon>AddTrade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Managers\managerA\EditRentPage.xaml.cs">
+      <DependentUpon>EditRentPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Managers\managerC\EditTrade.xaml.cs">
       <DependentUpon>EditTrade.xaml</DependentUpon>
@@ -162,6 +171,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Managers\managerA\addRentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Managers\managerA\ArendatorsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Managers\managerA\ManagerApage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -177,6 +194,10 @@
     <Page Include="View\Managers\managerC\AddTrade.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Managers\managerA\EditRentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Managers\managerC\EditTrade.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -263,6 +284,7 @@
     <Resource Include="Images\add.png" />
     <Resource Include="Images\edit.png" />
     <Resource Include="Images\reload.png" />
+    <Resource Include="Images\person.png" />
     <Content Include="Model\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>
