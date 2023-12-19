@@ -41,6 +41,7 @@ namespace PavilionApp.View.Managers.managerC
                         trade.AddedValueTrade = Convert.ToInt32(coofBox.Text);
                         trade.PriceBuilding = priceBox.Text;
                         trade.floor = Convert.ToInt32(floorBox.Text);
+                    trade.imageTrade = null;
                         AppData.db.TradeList.Add(trade);
                         AppData.db.SaveChanges();
                         MessageBox.Show("Успешно");
@@ -50,9 +51,9 @@ namespace PavilionApp.View.Managers.managerC
                     MessageBox.Show("Заполните все поля!");
                 }
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("Ошибка");
+                MessageBox.Show(ex.Message);
             }
         }
     }

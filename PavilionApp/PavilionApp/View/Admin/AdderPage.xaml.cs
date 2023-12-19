@@ -1,4 +1,5 @@
-﻿using PavilionApp.Model;
+﻿using Microsoft.Win32;
+using PavilionApp.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,7 @@ namespace PavilionApp.View.Admin
     {
 
         public int result;
+        Users person = new Users();
         public AdderPage()
         {
             InitializeComponent();
@@ -34,36 +36,32 @@ namespace PavilionApp.View.Admin
             {
                 if (nameBox.Text != null && surnameBox.Text != null && patronymicBox.Text != null && loginBox.Text != null && passwordBox.Text != null && roleBox.Text != null && genderBox.Text != null && nubmerBox.Text != null)
                 {
-                    string input = roleBox.Text;
-                    bool isInt = int.TryParse(input, out result);
-                    if ( isInt )
-                    {
-                        Users person = new Users();
-                        person.Login = loginBox.Text.ToLower();
+                    Users person = new Users();
+                    person.Login = loginBox.Text.ToLower();
                         person.Name = nameBox.Text;
                         person.Surname = surnameBox.Text;
                         person.Patronymic = patronymicBox.Text;
                         person.Role = Convert.ToInt32(roleBox.Text);
                         person.Gender = genderBox.Text;
                         person.Number = nubmerBox.Text;
+                        person.Image = null;
+                    person.Password = passwordBox.Text; 
+                    person.Id = AppData.db.Users.Any() ? AppData.db.Users.Max(u => u.Id) + 1 : 1;
                         AppData.db.Users.Add(person);
                         AppData.db.SaveChanges();
                         MessageBox.Show("Успешно");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Введите в окно ввода роли цифру роли!");
-                    }
                 }
                 else
                 {
                     MessageBox.Show("Заполните все поля!");
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Ошибка");
+                MessageBox.Show(ex.Message);
             }
         }
+
+       
     }
 }

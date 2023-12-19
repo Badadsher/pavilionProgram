@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\
 PavilionApp
 none
 false
 DEBUG;TRACE
-C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\App.xaml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\App.xaml
 13-68297783
-2739969757
+10-1929114395
 271037070698
-18-80626741
+181910545843
 MainWindow.xaml;View\Admin\AdderPage.xaml;View\Admin\AdminPage.xaml;View\Admin\EditPage.xaml;View\CapchaPage.xaml;View\Managers\managerA\ManagerApage.xaml;View\Managers\managerA\PavilionPage.xaml;View\Managers\managerA\ProcentPage.xaml;View\Managers\managerC\AddTrade.xaml;View\Managers\managerC\EditTrade.xaml;View\Managers\managerC\ManagerCpage.xaml;View\Managers\managerC\tradeList.xaml;View\SignIn.xaml;
 
-True
+False
 

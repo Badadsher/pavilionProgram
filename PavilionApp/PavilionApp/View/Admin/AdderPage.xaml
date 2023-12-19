@@ -110,14 +110,14 @@
     </Page.Resources>
 
     <Grid Background="White" Margin="0,0,-64,-72">
-        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="surnameBox" HorizontalAlignment="Left" Margin="52,27,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
-        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="nameBox" HorizontalAlignment="Left" Margin="52,86,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
-        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="patronymicBox" HorizontalAlignment="Left" Margin="52,152,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
-        <TextBox Style="{DynamicResource TextBoxStyle1}"  x:Name="loginBox" HorizontalAlignment="Left" Margin="52,217,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
-        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="passwordBox" HorizontalAlignment="Left" Margin="52,283,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
-        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="genderBox" HorizontalAlignment="Left" Margin="52,351,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
-        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="roleBox" HorizontalAlignment="Left" Margin="52,416,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
-        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="nubmerBox" HorizontalAlignment="Left" Margin="52,480,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="surnameBox" HorizontalAlignment="Left" Margin="52,27,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="nameBox" HorizontalAlignment="Left" Margin="52,86,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="patronymicBox" HorizontalAlignment="Left" Margin="52,152,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}"  x:Name="loginBox" HorizontalAlignment="Left" Margin="52,217,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="passwordBox" HorizontalAlignment="Left" Margin="52,283,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="genderBox" HorizontalAlignment="Left" Margin="52,351,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="roleBox" HorizontalAlignment="Left" Margin="40,483,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="nubmerBox" HorizontalAlignment="Left" Margin="52,414,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
         <Rectangle HorizontalAlignment="Left" Height="64" Margin="728,0,0,0" VerticalAlignment="Top" Width="62">
             <Rectangle.Fill>
@@ -125,13 +125,13 @@
             </Rectangle.Fill>
         </Rectangle>
         <Button x:Name="addUser" Style="{DynamicResource ButtonStyle1}" Content="Добавить пользователя" HorizontalAlignment="Left" Margin="416,233,0,0" VerticalAlignment="Top" Height="62" Width="174" Foreground="White" Background="#FFFF9C1E" FontFamily="Arial" Click="addUser_Click"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,6,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,65,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,131,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,196,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,330,0,0" TextWrapping="Wrap" Text="Пол" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,395,0,0" TextWrapping="Wrap" Text="Роль" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,262,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,459,0,0" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,11,0,0" TextWrapping="Wrap" Text="Фамилия" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FF78909C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,70,0,0" TextWrapping="Wrap" Text="Имя" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FF78909C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="61,136,0,0" TextWrapping="Wrap" Text="Отчество" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FF78909C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,266,0,0" TextWrapping="Wrap" Text="Пароль" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FF78909C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,335,0,0" TextWrapping="Wrap" Text="Пол" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FF78909C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,201,0,0" TextWrapping="Wrap" Text="Логин" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FF78909C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,464,0,0" TextWrapping="Wrap" Text="Роль" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FF78909C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,400,0,0" TextWrapping="Wrap" Text="Телефон" VerticalAlignment="Top" FontFamily="Arial Black" Foreground="#FF78909C"/>
     </Grid>
 </Page>

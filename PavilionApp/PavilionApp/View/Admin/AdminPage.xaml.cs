@@ -39,7 +39,7 @@ namespace PavilionApp.View.Admin
                 {
                     try
                     {
-                        usersGrid.ItemsSource = AppData.db.Users.Where(item => item.Login == searchBox.Text).ToList();
+                        usersGrid.ItemsSource = AppData.db.Users.Where(item => item.Surname == searchBox.Text).ToList();
                     }
                     catch
                     {

@@ -98,8 +98,14 @@
     <Compile Include="Model\Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="View\Admin\AdderPage.xaml.cs">
+      <DependentUpon>AdderPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Admin\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Admin\EditPage.xaml.cs">
+      <DependentUpon>EditPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CapchaPage.xaml.cs">
       <DependentUpon>CapchaPage.xaml</DependentUpon>
@@ -113,8 +119,17 @@
     <Compile Include="View\Managers\managerA\ProcentPage.xaml.cs">
       <DependentUpon>ProcentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Managers\managerC\AddTrade.xaml.cs">
+      <DependentUpon>AddTrade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Managers\managerC\EditTrade.xaml.cs">
+      <DependentUpon>EditTrade.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Managers\managerC\ManagerCpage.xaml.cs">
       <DependentUpon>ManagerCpage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Managers\managerC\tradeList.xaml.cs">
+      <DependentUpon>tradeList.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\SignIn.xaml.cs">
       <DependentUpon>SignIn.xaml</DependentUpon>
@@ -131,9 +146,17 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\Admin\AdderPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\Admin\AdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Admin\EditPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\CapchaPage.xaml">
       <SubType>Designer</SubType>
@@ -151,9 +174,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Managers\managerC\AddTrade.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Managers\managerC\EditTrade.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\Managers\managerC\ManagerCpage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Managers\managerC\tradeList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\SignIn.xaml">
       <SubType>Designer</SubType>
@@ -182,6 +217,14 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include=".vs\PavilionApp\FileContentIndex\0c422599-c09a-46ba-b0a6-c2853416fcc9.vsidx" />
+    <None Include=".vs\PavilionApp\FileContentIndex\fd3c14ee-0966-424e-8030-e803c2f4d914.vsidx" />
+    <None Include=".vs\PavilionApp\v17\.wsuo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="bin\Debug\PavilionApp.exe.config" />
+    <None Include="bin\Release\PavilionApp.exe.config" />
     <None Include="Model\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>
@@ -205,6 +248,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\find.png" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Resource Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Resource Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\PavilionApp.exe" />
+    <Content Include="bin\Debug\PavilionApp.pdb" />
+    <Content Include="bin\Release\EntityFramework.dll" />
+    <Content Include="bin\Release\EntityFramework.SqlServer.dll" />
+    <Resource Include="bin\Release\EntityFramework.SqlServer.xml" />
+    <Resource Include="bin\Release\EntityFramework.xml" />
+    <Content Include="bin\Release\PavilionApp.exe" />
+    <Content Include="bin\Release\PavilionApp.pdb" />
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\edit.png" />
+    <Resource Include="Images\reload.png" />
     <Content Include="Model\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model1.Context.cs</LastGenOutput>

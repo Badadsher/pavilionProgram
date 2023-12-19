@@ -40,13 +40,13 @@ namespace PavilionApp.View.Admin
                     {
                         
                         curUser.Login = loginBox.Text.ToLower();
+                        curUser.Password = passwordBox.Text.ToLower();  
                         curUser.Name = nameBox.Text;
                         curUser.Surname = surnameBox.Text;
                         curUser.Patronymic = patronymicBox.Text;
                         curUser.Role = Convert.ToInt32(roleBox.Text);
                         curUser.Gender = genderBox.Text;
-                        curUser.Number = nubmerBox.Text;
-                        AppData.db.Users.Add(curUser);
+                        curUser.Number = nubmerBox.Text;                       
                         AppData.db.SaveChanges();
                         MessageBox.Show("Изменения внесены!");
                     }

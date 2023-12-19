@@ -31,7 +31,8 @@ namespace PavilionApp.View.Managers.managerC
             tradeGrid.ItemsSource = AppData.db.TradeList.ToList();
         }
 
-        private void editBT(object sender, RoutedEventArgs e)
+
+        private void addTradeFunction(object sender, RoutedEventArgs e)
         {
             var curTrade = tradeGrid.SelectedItem as TradeList;
 
@@ -46,7 +47,7 @@ namespace PavilionApp.View.Managers.managerC
                     curTrade.AddedValueTrade = Convert.ToInt32(coofBox.Text);
                     curTrade.PriceBuilding = priceBox.Text;
                     curTrade.floor = Convert.ToInt32(floorBox.Text);
-                    AppData.db.TradeList.Add(curTrade);
+
                     AppData.db.SaveChanges();
                     MessageBox.Show("Данные изменены");
                 }

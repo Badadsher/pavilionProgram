@@ -124,7 +124,7 @@
                 <ImageBrush ImageSource="/Images/logo.jpg"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="addTrade" Style="{DynamicResource ButtonStyle1}" Content="Добавить ТЦ" HorizontalAlignment="Left" Margin="416,233,0,0" VerticalAlignment="Top" Height="62" Width="174" Foreground="White" Background="#FFFF9C1E" FontFamily="Arial" Click="addUser_Click"/>
+        <Button x:Name="addTradeBUT" Style="{DynamicResource ButtonStyle1}" Content="Добавить ТЦ" HorizontalAlignment="Left" Margin="416,233,0,0" VerticalAlignment="Top" Height="62" Width="174" Foreground="White" Background="#FFFF9C1E" FontFamily="Arial" Click="addTrade"/>
         <TextBox HorizontalAlignment="Left" Margin="52,6,0,0" TextWrapping="Wrap" Text="Название ТЦ" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
         <TextBox HorizontalAlignment="Left" Margin="52,65,0,0" TextWrapping="Wrap" Text="Статус ТЦ" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
         <TextBox HorizontalAlignment="Left" Margin="52,131,0,0" TextWrapping="Wrap" Text="Количество павильонов" VerticalAlignment="Top" Width="167" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>

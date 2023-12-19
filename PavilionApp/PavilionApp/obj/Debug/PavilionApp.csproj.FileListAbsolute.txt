@@ -24,8 +24,6 @@ C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionA
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\PavilionApp.exe.config
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\PavilionApp.exe
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\PavilionApp.pdb
-E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\EntityFramework.dll
-E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\EntityFramework.SqlServer.dll
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\EntityFramework.xml
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\bin\Debug\EntityFramework.SqlServer.xml
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\PavilionApp.csproj.AssemblyReference.cache
@@ -69,3 +67,13 @@ C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionA
 C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\PavilionPage.baml
 C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ProcentPage.baml
 C:\Users\Heisenberg\Desktop\C# PRIKOLI\PavilionProgram\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\ManagerCpage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Admin\AdderPage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Admin\EditPage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\AddTrade.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\EditTrade.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\tradeList.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Admin\AdderPage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Admin\EditPage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\AddTrade.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\EditTrade.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\tradeList.baml

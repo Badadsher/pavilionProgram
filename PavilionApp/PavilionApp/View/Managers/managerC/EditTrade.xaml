@@ -124,16 +124,8 @@
                 <ImageBrush ImageSource="/Images/logo.jpg"/>
             </Rectangle.Fill>
         </Rectangle>
-        <Button x:Name="addTrade" Style="{DynamicResource ButtonStyle1}" Content="Изменить ТЦ" HorizontalAlignment="Left" Margin="498,386,0,0" VerticalAlignment="Top" Height="62" Width="174" Foreground="White" Background="#FFFF9C1E" FontFamily="Arial" Click="addTrade"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,6,0,0" TextWrapping="Wrap" Text="Название ТЦ" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,65,0,0" TextWrapping="Wrap" Text="Статус ТЦ" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,131,0,0" TextWrapping="Wrap" Text="Количество павильонов" VerticalAlignment="Top" Width="167" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,196,0,0" TextWrapping="Wrap" Text="Город" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,330,0,0" TextWrapping="Wrap" Text="Цена постройки" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-        <TextBox HorizontalAlignment="Left" Margin="52,395,0,0" TextWrapping="Wrap" Text="Этажность" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-       
-        <TextBox HorizontalAlignment="Left" Margin="52,262,0,0" TextWrapping="Wrap" Text="Коофицент" VerticalAlignment="Top" Width="120" FontWeight="Bold" FontFamily="Arial" Foreground="#FF37474F"/>
-       
+        <Button x:Name="buttonChange" Style="{DynamicResource ButtonStyle1}" Content="Изменить ТЦ" HorizontalAlignment="Left" Margin="498,386,0,0" VerticalAlignment="Top" Height="62" Width="174" Foreground="White" Background="#FFFF9C1E" FontFamily="Arial" Click="addTradeFunction"/>
+
         <DataGrid x:Name="tradeGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="316,108,10,207" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название" Width="*" Binding="{Binding NameTrade}"></DataGridTextColumn>
@@ -146,5 +138,12 @@
             </DataGrid.Columns>
         </DataGrid>
         <TextBox HorizontalAlignment="Left" Margin="320,73,0,0" TextWrapping="Wrap" Text="Нажмите на ТЦ в столбце ниже и введите данные для изменения" VerticalAlignment="Top" Width="470" FontFamily="Arial" FontWeight="Bold" BorderBrush="#00ABADB3" Foreground="#FF78909C"/>
+        <TextBlock HorizontalAlignment="Left" Margin="52,8,0,0" TextWrapping="Wrap" Text="Название ТЦ" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="52,67,0,0" TextWrapping="Wrap" Text="Статус ТЦ" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="52,198,0,0" TextWrapping="Wrap" Text="Город" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="54,332,0,0" TextWrapping="Wrap" Text="Цена постройки" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="54,264,0,0" TextWrapping="Wrap" Text="Коофицент" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="52,133,0,0" TextWrapping="Wrap" Text="Количество павильонов" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="54,397,0,0" TextWrapping="Wrap" Text="Цена постройки" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontWeight="Bold"/>
     </Grid>
 </Page>
