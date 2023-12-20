@@ -67,6 +67,7 @@ namespace PavilionApp.View
                 }
                 else
                 {
+                    MessageBox.Show("Неверно!");
                     tryCount++;
                     CheckCapcha();
                 }
