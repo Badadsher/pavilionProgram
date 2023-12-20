@@ -41,7 +41,7 @@ namespace PavilionApp.View.Managers.managerC
                         trade.AddedValueTrade = Convert.ToInt32(coofBox.Text);
                         trade.PriceBuilding = priceBox.Text;
                         trade.floor = Convert.ToInt32(floorBox.Text);
-                    trade.imageTrade = null;
+                        trade.imageTrade = null;
                         AppData.db.TradeList.Add(trade);
                         AppData.db.SaveChanges();
                         MessageBox.Show("Успешно");

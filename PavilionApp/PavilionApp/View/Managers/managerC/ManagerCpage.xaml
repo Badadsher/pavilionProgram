@@ -15,7 +15,7 @@
             </Rectangle.Fill>
         </Rectangle>
 
-        <Button x:Name="pavilionBT"  HorizontalAlignment="Left" Margin="331,152,0,0" VerticalAlignment="Top"  Height="118" Width="134" BorderBrush="#00707070" Click="pavilionBT_Click">
+        <Button x:Name="pavilionBT"  HorizontalAlignment="Center" Margin="0,164,0,0" VerticalAlignment="Top"  Height="118" Width="134" BorderBrush="#00707070" Click="pavilionBT_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Images/tower.png"/>
             </Button.Background>

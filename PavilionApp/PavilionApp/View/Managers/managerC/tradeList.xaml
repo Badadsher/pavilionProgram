@@ -111,12 +111,19 @@
     </Page.Resources>
 
     <Grid Background="White">
-        <Rectangle HorizontalAlignment="Left" Height="64" Margin="728,0,0,0" VerticalAlignment="Top" Width="62">
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Row="0" HorizontalAlignment="Left" Height="64" Margin="728,0,0,0" VerticalAlignment="Top" Width="62">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Images/logo.jpg"/>
             </Rectangle.Fill>
         </Rectangle>
-        <DataGrid x:Name="tradeGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="82,148,82,183" AutoGenerateColumns="False">
+        <DataGrid Grid.Row="1" x:Name="tradeGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="86,22,78,22" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название" Width="*" Binding="{Binding NameTrade}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Статус" Width="*" Binding="{Binding Status}"></DataGridTextColumn>
@@ -127,32 +134,41 @@
                 <DataGridTextColumn Header="коэффициент добавочной стоимости " Width="*" Binding="{Binding AddedValueTrade}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBlock HorizontalAlignment="Left" Margin="21,14,0,0" TextWrapping="Wrap" Text="Добро пожаловать,менеджер С!" VerticalAlignment="Top" Height="36" Width="187" FontFamily="Arial" Foreground="#FF78909C"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,112,0,0" TextWrapping="Wrap" Text="Таблица торговых центров" VerticalAlignment="Top" Height="36" Width="382" FontFamily="Arial" Foreground="#FF78909C" TextAlignment="Center" FontWeight="Bold"/>
-        <Rectangle HorizontalAlignment="Left" Height="15" Margin="240,311,0,0" VerticalAlignment="Top" Width="15">
+        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="21,14,0,0" TextWrapping="Wrap" Text="Добро пожаловать,менеджер С!" VerticalAlignment="Top" Height="36" Width="187" FontFamily="Arial" Foreground="#FF78909C"/>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Margin="0,112,0,0" TextWrapping="Wrap" Text="Таблица торговых центров" VerticalAlignment="Top" Height="36" Width="382" FontFamily="Arial" Foreground="#FF78909C" TextAlignment="Center" FontWeight="Bold"/>
+        <Rectangle  Grid.Row="2" HorizontalAlignment="Left" Height="15" Margin="193,42,0,0" VerticalAlignment="Top" Width="15">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Images/find.png"/>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBlock HorizontalAlignment="Left" Margin="460,432,0,0" TextWrapping="Wrap" Text="Добавить" VerticalAlignment="Top" Height="12" Width="388" FontFamily="Arial" Foreground="#FF78909C" TextAlignment="Center" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Margin="556,432,0,0" TextWrapping="Wrap" Text="Редактировать" VerticalAlignment="Top" Height="12" Width="388" FontFamily="Arial" Foreground="#FF78909C" TextAlignment="Center" FontWeight="Bold"/>
-        <Button x:Name="addBT"  HorizontalAlignment="Left" Margin="620,364,0,0" VerticalAlignment="Top" Height="63" Width="68" BorderBrush="#00707070" Foreground="#00000000" Click="addBT_Click">
+        <TextBlock Grid.Row="2" HorizontalAlignment="Left" Margin="428,132,0,0" TextWrapping="Wrap" Text="Добавить" VerticalAlignment="Top" Height="12" Width="388" FontFamily="Arial" Foreground="#FF78909C" TextAlignment="Center" FontWeight="Bold"/>
+        <TextBlock  Grid.Row="2" HorizontalAlignment="Left" Margin="536,132,0,0" TextWrapping="Wrap" Text="Редактировать" VerticalAlignment="Top" Height="12" Width="388" FontFamily="Arial" Foreground="#FF78909C" TextAlignment="Center" FontWeight="Bold"/>
+        <Button Grid.Row="2" x:Name="addBT"  HorizontalAlignment="Left" Margin="586,64,0,0" VerticalAlignment="Top" Height="63" Width="68" BorderBrush="#00707070" Foreground="#00000000" Click="addBT_Click">
             <Button.Background>
                 <ImageBrush ImageSource="/Images/add.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="editBT"  HorizontalAlignment="Left" Margin="722,364,0,0" VerticalAlignment="Top" Height="63" Width="68" BorderBrush="#00707070" Foreground="#00000000" Click="editBT_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="/Images/edit.png"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="reloadBT" HorizontalAlignment="Left" Margin="10,364,0,0" VerticalAlignment="Top" Height="63" Width="69" BorderBrush="#00707070" Foreground="#00000000" Click="Update">
+        <Button Grid.Row="2"  x:Name="reloadBT" HorizontalAlignment="Left" Margin="0,77,0,0" VerticalAlignment="Top" Height="63" Width="69" BorderBrush="#00707070" Foreground="#00000000" Click="Update">
             <Button.Background>
                 <ImageBrush ImageSource="/Images/reload.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="deleteBT" Style="{DynamicResource ButtonStyle1}" Content="Удалить" HorizontalAlignment="Left" Margin="591,297,0,0" VerticalAlignment="Top" Width="127" Foreground="White" Background="Red" BorderBrush="Red" Click="Delete"/>
-        <Button Style="{DynamicResource ButtonStyle1}" Content="Отфильтровать по городам" HorizontalAlignment="Left" Margin="86,283,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF9C1A" BorderBrush="#00707070" Foreground="White" FontFamily="Arial" Height="24"/>
-        <Button Style="{DynamicResource ButtonStyle1}" Content="Отфильтровать по статусу" HorizontalAlignment="Left" Margin="86,318,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF9C1A" BorderBrush="#00707070" Foreground="White" FontFamily="Arial" Height="24"/>
+        <Button Grid.Row="2" x:Name="deleteBT" Style="{DynamicResource ButtonStyle1}" Content="Удалить" HorizontalAlignment="Left" Margin="536,0,0,0" VerticalAlignment="Top" Width="127" Foreground="White" Background="Red" BorderBrush="Red" Click="Delete" Height="31" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Grid.Row="2" Style="{DynamicResource ButtonStyle1}" Content="Отфильтровать по городам" HorizontalAlignment="Left" Margin="86,13,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF9C1A" BorderBrush="#00707070" Foreground="White" FontFamily="Arial" Height="24"/>
+        <Button Grid.Row="2" Style="{DynamicResource ButtonStyle1}" Content="Отфильтровать по статусу" HorizontalAlignment="Left" Margin="86,48,0,0" VerticalAlignment="Top" Width="169" Background="#FFFF9C1A" BorderBrush="#00707070" Foreground="White" FontFamily="Arial" Height="24"/>
+        <Button Grid.Row="2" x:Name="addBT_Копировать"  HorizontalAlignment="Left" Margin="696,60,0,0" VerticalAlignment="Top" Height="63" Width="68" BorderBrush="#00707070" Foreground="#00000000"  Click="editBT_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Images/edit.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Page>

@@ -25,6 +25,20 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="TradeList">
+      <EntityTypeMapping TypeName="pavilionDBModel.TradeList">
+        <MappingFragment StoreEntitySet="TradeList">
+          <ScalarProperty Name="NameTrade" ColumnName="NameTrade" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="PavilionsCount" ColumnName="PavilionsCount" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="PriceBuilding" ColumnName="PriceBuilding" />
+          <ScalarProperty Name="AddedValueTrade" ColumnName="AddedValueTrade" />
+          <ScalarProperty Name="floor" ColumnName="floor" />
+          <ScalarProperty Name="imageTrade" ColumnName="imageTrade" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Users">
       <EntityTypeMapping TypeName="pavilionDBModel.Users">
         <MappingFragment StoreEntitySet="Users">
@@ -51,20 +65,6 @@
           <ScalarProperty Name="AddedValue" ColumnName="AddedValue" />
           <ScalarProperty Name="Area" ColumnName="Area" />
           <ScalarProperty Name="StatusPavilion" ColumnName="StatusPavilion" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="TradeList">
-      <EntityTypeMapping TypeName="pavilionDBModel.TradeList">
-        <MappingFragment StoreEntitySet="TradeList">
-          <ScalarProperty Name="NameTrade" ColumnName="NameTrade" />
-          <ScalarProperty Name="Status" ColumnName="Status" />
-          <ScalarProperty Name="PavilionsCount" ColumnName="PavilionsCount" />
-          <ScalarProperty Name="City" ColumnName="City" />
-          <ScalarProperty Name="PriceBuilding" ColumnName="PriceBuilding" />
-          <ScalarProperty Name="AddedValueTrade" ColumnName="AddedValueTrade" />
-          <ScalarProperty Name="floor" ColumnName="floor" />
-          <ScalarProperty Name="imageTrade" ColumnName="imageTrade" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

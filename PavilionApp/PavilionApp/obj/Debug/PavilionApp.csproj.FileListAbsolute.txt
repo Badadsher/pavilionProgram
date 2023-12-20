@@ -77,3 +77,9 @@ E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Admin\EditPag
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\AddTrade.baml
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\EditTrade.baml
 E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerC\tradeList.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\addRentPage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ArendatorsPage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\EditRentPage.g.cs
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\addRentPage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\ArendatorsPage.baml
+E:\pavilion\pavilionProgram\PavilionApp\PavilionApp\obj\Debug\View\Managers\managerA\EditRentPage.baml

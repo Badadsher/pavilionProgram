@@ -4,12 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="ceea123296b243d587c59a0f798f5b09" Name="Diagram1">
+      <Diagram DiagramId="4e9828988d714d8db03ae635d650148a" Name="Diagram1">
         <EntityTypeShape EntityType="pavilionDBModel.Arendators" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
         <EntityTypeShape EntityType="pavilionDBModel.Occupancy" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="pavilionDBModel.TradeList" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="pavilionDBModel.Users" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="pavilionDBModel.Pavilions" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="pavilionDBModel.TradeList" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="pavilionDBModel.Pavilions" Width="1.5" PointX="4.75" PointY="4.75" IsExpanded="true" />
         <AssociationConnector Association="pavilionDBModel.FK_Occupancy_Arendators" ManuallyRouted="false" />
         <AssociationConnector Association="pavilionDBModel.FK_Occupancy_Users" ManuallyRouted="false" />
       </Diagram>

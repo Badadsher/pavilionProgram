@@ -53,5 +53,5 @@ namespace PavilionApp.View.Managers.managerA
             }
         }
     }
-    }
 }
+    

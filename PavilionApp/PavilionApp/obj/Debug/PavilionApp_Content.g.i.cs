@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/model1.context.tt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/model1.tt")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/entityframework.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/entityframework.sqlserver.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/debug/pavilionapp.exe")]
@@ -16,7 +18,5 @@
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/release/entityframework.sqlserver.dll")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/release/pavilionapp.exe")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("bin/release/pavilionapp.pdb")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/model1.context.tt")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/model1.tt")]
 
 

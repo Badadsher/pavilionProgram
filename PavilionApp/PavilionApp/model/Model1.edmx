@@ -47,17 +47,9 @@
           <Property Name="Area" Type="float" Nullable="false" />
           <Property Name="StatusPavilion" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <!--Ошибки, обнаруженные при создании:
-предупреждение 6002: В таблице или представлении "pavilionDB.dbo.TradeList" не определен первичный ключ. Ключ был выведен, а определение таблицы или представления было создано в режиме только для чтения.-->
         <EntityType Name="TradeList">
           <Key>
             <PropertyRef Name="NameTrade" />
-            <PropertyRef Name="Status" />
-            <PropertyRef Name="PavilionsCount" />
-            <PropertyRef Name="City" />
-            <PropertyRef Name="PriceBuilding" />
-            <PropertyRef Name="AddedValueTrade" />
-            <PropertyRef Name="floor" />
           </Key>
           <Property Name="NameTrade" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -110,6 +102,7 @@
         <EntityContainer Name="Хранилище pavilionDBModelContainer">
           <EntitySet Name="Arendators" EntityType="Self.Arendators" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Occupancy" EntityType="Self.Occupancy" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TradeList" EntityType="Self.TradeList" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Pavilions" EntityType="Self.Pavilions" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
@@ -121,18 +114,6 @@
     [Pavilions].[Area] AS [Area], 
     [Pavilions].[StatusPavilion] AS [StatusPavilion]
     FROM [dbo].[Pavilions] AS [Pavilions]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="TradeList" EntityType="Self.TradeList" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [TradeList].[NameTrade] AS [NameTrade], 
-    [TradeList].[Status] AS [Status], 
-    [TradeList].[PavilionsCount] AS [PavilionsCount], 
-    [TradeList].[City] AS [City], 
-    [TradeList].[PriceBuilding] AS [PriceBuilding], 
-    [TradeList].[AddedValueTrade] AS [AddedValueTrade], 
-    [TradeList].[floor] AS [floor], 
-    [TradeList].[imageTrade] AS [imageTrade]
-    FROM [dbo].[TradeList] AS [TradeList]</DefiningQuery>
           </EntitySet>
           <AssociationSet Name="FK_Occupancy_Arendators" Association="Self.FK_Occupancy_Arendators">
             <End Role="Arendators" EntitySet="Arendators" />
@@ -173,6 +154,19 @@
           <NavigationProperty Name="Arendators" Relationship="Self.FK_Occupancy_Arendators" FromRole="Occupancy" ToRole="Arendators" />
           <NavigationProperty Name="Users" Relationship="Self.FK_Occupancy_Users" FromRole="Occupancy" ToRole="Users" />
         </EntityType>
+        <EntityType Name="TradeList">
+          <Key>
+            <PropertyRef Name="NameTrade" />
+          </Key>
+          <Property Name="NameTrade" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PavilionsCount" Type="Int32" Nullable="false" />
+          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PriceBuilding" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="AddedValueTrade" Type="Double" Nullable="false" />
+          <Property Name="floor" Type="Int32" Nullable="false" />
+          <Property Name="imageTrade" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
         <EntityType Name="Users">
           <Key>
             <PropertyRef Name="Id" />
@@ -207,25 +201,6 @@
           <Property Name="Area" Type="Double" Nullable="false" />
           <Property Name="StatusPavilion" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
-        <EntityType Name="TradeList">
-          <Key>
-            <PropertyRef Name="NameTrade" />
-            <PropertyRef Name="Status" />
-            <PropertyRef Name="PavilionsCount" />
-            <PropertyRef Name="City" />
-            <PropertyRef Name="PriceBuilding" />
-            <PropertyRef Name="AddedValueTrade" />
-            <PropertyRef Name="floor" />
-          </Key>
-          <Property Name="NameTrade" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="PavilionsCount" Type="Int32" Nullable="false" />
-          <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="PriceBuilding" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="AddedValueTrade" Type="Double" Nullable="false" />
-          <Property Name="floor" Type="Int32" Nullable="false" />
-          <Property Name="imageTrade" Type="Binary" MaxLength="Max" FixedLength="false" />
-        </EntityType>
         <Association Name="FK_Occupancy_Arendators">
           <End Role="Arendators" Type="Self.Arendators" Multiplicity="1" />
           <End Role="Occupancy" Type="Self.Occupancy" Multiplicity="*" />
@@ -253,9 +228,9 @@
         <EntityContainer Name="pavilionDBEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Arendators" EntityType="Self.Arendators" />
           <EntitySet Name="Occupancy" EntityType="Self.Occupancy" />
+          <EntitySet Name="TradeList" EntityType="Self.TradeList" />
           <EntitySet Name="Users" EntityType="Self.Users" />
           <EntitySet Name="Pavilions" EntityType="Self.Pavilions" />
-          <EntitySet Name="TradeList" EntityType="Self.TradeList" />
           <AssociationSet Name="FK_Occupancy_Arendators" Association="Self.FK_Occupancy_Arendators">
             <End Role="Arendators" EntitySet="Arendators" />
             <End Role="Occupancy" EntitySet="Occupancy" />
@@ -295,6 +270,20 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="TradeList">
+            <EntityTypeMapping TypeName="pavilionDBModel.TradeList">
+              <MappingFragment StoreEntitySet="TradeList">
+                <ScalarProperty Name="NameTrade" ColumnName="NameTrade" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="PavilionsCount" ColumnName="PavilionsCount" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="PriceBuilding" ColumnName="PriceBuilding" />
+                <ScalarProperty Name="AddedValueTrade" ColumnName="AddedValueTrade" />
+                <ScalarProperty Name="floor" ColumnName="floor" />
+                <ScalarProperty Name="imageTrade" ColumnName="imageTrade" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="pavilionDBModel.Users">
               <MappingFragment StoreEntitySet="Users">
@@ -321,20 +310,6 @@
                 <ScalarProperty Name="AddedValue" ColumnName="AddedValue" />
                 <ScalarProperty Name="Area" ColumnName="Area" />
                 <ScalarProperty Name="StatusPavilion" ColumnName="StatusPavilion" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="TradeList">
-            <EntityTypeMapping TypeName="pavilionDBModel.TradeList">
-              <MappingFragment StoreEntitySet="TradeList">
-                <ScalarProperty Name="NameTrade" ColumnName="NameTrade" />
-                <ScalarProperty Name="Status" ColumnName="Status" />
-                <ScalarProperty Name="PavilionsCount" ColumnName="PavilionsCount" />
-                <ScalarProperty Name="City" ColumnName="City" />
-                <ScalarProperty Name="PriceBuilding" ColumnName="PriceBuilding" />
-                <ScalarProperty Name="AddedValueTrade" ColumnName="AddedValueTrade" />
-                <ScalarProperty Name="floor" ColumnName="floor" />
-                <ScalarProperty Name="imageTrade" ColumnName="imageTrade" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

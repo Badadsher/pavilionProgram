@@ -65,42 +65,50 @@
         </Style>
     </Page.Resources>
 
+
+
     <Grid Background="White">
-        <Rectangle HorizontalAlignment="Left" Height="64" Margin="728,0,0,0" VerticalAlignment="Top" Width="62">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="17*"></RowDefinition>
+            <RowDefinition Height="33*"></RowDefinition>
+            <RowDefinition Height="25*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" HorizontalAlignment="Left" Height="64" Margin="728,0,0,0" VerticalAlignment="Top" Width="62">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Images/logo.jpg"/>
             </Rectangle.Fill>
         </Rectangle>
-        <TextBlock HorizontalAlignment="Left" Margin="21,14,0,0" TextWrapping="Wrap" Text="Добро пожаловать,менеджер A!" VerticalAlignment="Top" Height="36" Width="187" FontFamily="Arial" Foreground="#FF78909C"/>
-        <DataGrid x:Name="rentGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="81,88,81,194" AutoGenerateColumns="False">
+        <TextBlock Grid.Row="0" HorizontalAlignment="Left" Margin="21,14,0,0" TextWrapping="Wrap" Text="Добро пожаловать,менеджер A!" VerticalAlignment="Top" Height="36" Width="187" FontFamily="Arial" Foreground="#FF78909C"/>
+        <DataGrid Grid.Row="1" x:Name="rentGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="81,30,81,30" AutoGenerateColumns="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название компании" Width="*" Binding="{Binding CompanyName}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Номер телефона" Width="*" Binding="{Binding Number}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Адрес" Width="*" Binding="{Binding Adress}"></DataGridTextColumn>
             </DataGrid.Columns>
         </DataGrid>
-        <TextBlock HorizontalAlignment="Left" Margin="556,432,0,0" TextWrapping="Wrap" Text="Редактировать" VerticalAlignment="Top" Height="12" Width="388" FontFamily="Arial" Foreground="#FF78909C" TextAlignment="Center" FontWeight="Bold"/>
-        <Button x:Name="addBT"  HorizontalAlignment="Left" Margin="620,364,0,0" VerticalAlignment="Top" Height="63" Width="68" BorderBrush="#00707070" Foreground="#00000000" Click="addBT_Click">
+        <TextBlock HorizontalAlignment="Left" Margin="556,132,0,0" TextWrapping="Wrap" Text="Редактировать" VerticalAlignment="Top" Height="12" Width="388" FontFamily="Arial" Foreground="#FF78909C" TextAlignment="Center" FontWeight="Bold" Grid.Row="2"/>
+        <Button x:Name="addBT"  HorizontalAlignment="Left" Margin="620,64,0,0" VerticalAlignment="Top" Height="63" Width="68" BorderBrush="#00707070" Foreground="#00000000" Click="addBT_Click" Grid.Row="2">
             <Button.Background>
                 <ImageBrush ImageSource="/Images/add.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="editBT"  HorizontalAlignment="Left" Margin="722,364,0,0" VerticalAlignment="Top" Height="63" Width="68" BorderBrush="#00707070" Foreground="#00000000" Click="editBT_Click">
+        <Button x:Name="editBT"  HorizontalAlignment="Left" Margin="722,64,0,0" VerticalAlignment="Top" Height="63" Width="68" BorderBrush="#00707070" Foreground="#00000000" Click="editBT_Click" Grid.Row="2">
             <Button.Background>
                 <ImageBrush ImageSource="/Images/edit.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="reloadBT" HorizontalAlignment="Left" Margin="10,364,0,0" VerticalAlignment="Top" Height="63" Width="69" BorderBrush="#00707070" Foreground="#00000000" Click="Update">
+        <Button x:Name="reloadBT" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top" Height="63" Width="69" BorderBrush="#00707070" Foreground="#00000000" Click="Update" Grid.Row="2">
             <Button.Background>
                 <ImageBrush ImageSource="/Images/reload.png"/>
             </Button.Background>
         </Button>
-        <Button Style="{DynamicResource ButtonStyle1}" x:Name="deleteBT"  Content="Удалить" HorizontalAlignment="Left" Margin="591,297,0,0" VerticalAlignment="Top" Width="127" Foreground="White" Background="Red" BorderBrush="Red" Click="Delete"/>
-        <TextBlock HorizontalAlignment="Left" Margin="460,432,0,0" TextWrapping="Wrap" Text="Добавить" VerticalAlignment="Top" Height="12" Width="388" FontFamily="Arial" Foreground="#FF78909C" TextAlignment="Center" FontWeight="Bold"/>
+        <Button Style="{DynamicResource ButtonStyle1}" x:Name="deleteBT"  Content="Удалить" HorizontalAlignment="Left" Margin="590,0,0,0" VerticalAlignment="Top" Width="128" Foreground="White" Background="Red" BorderBrush="Red" Click="Delete" Height="21" Grid.Row="2"/>
+        <TextBlock HorizontalAlignment="Left" Margin="460,132,0,0" TextWrapping="Wrap" Text="Добавить" VerticalAlignment="Top" Height="12" Width="388" FontFamily="Arial" Foreground="#FF78909C" TextAlignment="Center" FontWeight="Bold" Grid.Row="2"/>
         <TextBlock HorizontalAlignment="Left" Margin="322,64,0,0" TextWrapping="Wrap" Text="Cписок арендовщиков" VerticalAlignment="Top" Height="36" Width="188" FontFamily="Arial" Foreground="#FF78909C"/>
-       
-        <TextBlock HorizontalAlignment="Left" Margin="81,263,0,0" TextWrapping="Wrap" Text="Аренда" VerticalAlignment="Top" Height="36" Width="188" FontFamily="Arial" Foreground="#FF78909C"/>
-        <DataGrid x:Name="rentArentGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="79,294,459,36" AutoGenerateColumns="False">
+
+        <TextBlock HorizontalAlignment="Left" Margin="81,183,0,0" TextWrapping="Wrap" Text="Аренда" VerticalAlignment="Top" Height="36" Width="188" FontFamily="Arial" Foreground="#FF78909C" Grid.Row="1" Grid.RowSpan="2"/>
+        <DataGrid x:Name="rentArentGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="81,0,457,54" AutoGenerateColumns="False" Grid.Row="2">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Название" Width="*" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Номер павильона" Width="*" Binding="{Binding Pavilion}"/>
@@ -109,7 +117,7 @@
                 <DataGridTextColumn Header="Конец аренды" Width="*" Binding="{Binding End_Occupancy}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Style="{DynamicResource ButtonStyle1}" x:Name="deleteBT_Copy"  Content="ПОСМОТРЕТЬ АРЕНДУ" HorizontalAlignment="Left" Margin="364,344,0,0" VerticalAlignment="Top" Width="146" Foreground="White" Background="#FFFF9C1A" BorderBrush="Red" Click="checkRent" Height="26"/>
+        <Button Style="{DynamicResource ButtonStyle1}" x:Name="deleteBT_Copy"  Content="ПОСМОТРЕТЬ АРЕНДУ" HorizontalAlignment="Left" Margin="81,128,0,0" VerticalAlignment="Top" Width="146" Foreground="White" Background="#FFFF9C1A" BorderBrush="Red" Click="checkRent" Height="26" Grid.Row="2"/>
 
     </Grid>
 </Page>

@@ -55,7 +55,7 @@ namespace PavilionApp.View.Managers.managerC
 
         private void Update(object sender, RoutedEventArgs e)
         {
-            tradeGrid.ItemsSource = AppData.db.Users.ToList();
+            tradeGrid.ItemsSource = AppData.db.TradeList.ToList();
             MessageBox.Show("Обновлено");
         }
 

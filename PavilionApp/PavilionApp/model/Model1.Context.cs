@@ -27,8 +27,8 @@ namespace PavilionApp.Model
     
         public virtual DbSet<Arendators> Arendators { get; set; }
         public virtual DbSet<Occupancy> Occupancy { get; set; }
+        public virtual DbSet<TradeList> TradeList { get; set; }
         public virtual DbSet<Users> Users { get; set; }
         public virtual DbSet<Pavilions> Pavilions { get; set; }
-        public virtual DbSet<TradeList> TradeList { get; set; }
     }
 }

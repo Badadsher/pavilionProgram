@@ -38,9 +38,9 @@ namespace PavilionApp.View.Managers.managerC
 
             try
             {
-                if (!string.IsNullOrEmpty(tradenameBox.Text)  && !string.IsNullOrEmpty(statusBox.Text) && !string.IsNullOrEmpty(countBox.Text) && !string.IsNullOrEmpty(cityBox.Text) && !string.IsNullOrEmpty(coofBox.Text) && !string.IsNullOrEmpty(priceBox.Text) && !string.IsNullOrEmpty(floorBox.Text))
+                if ( !string.IsNullOrEmpty(statusBox.Text) && !string.IsNullOrEmpty(countBox.Text) && !string.IsNullOrEmpty(cityBox.Text) && !string.IsNullOrEmpty(coofBox.Text) && !string.IsNullOrEmpty(priceBox.Text) && !string.IsNullOrEmpty(floorBox.Text))
                 {
-                    curTrade.NameTrade = tradenameBox.Text;
+             
                     curTrade.Status = statusBox.Text;
                     curTrade.PavilionsCount = Convert.ToInt32(countBox.Text);
                     curTrade.City = cityBox.Text;
@@ -56,9 +56,9 @@ namespace PavilionApp.View.Managers.managerC
                     MessageBox.Show("Заполните все поля!");
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Ошибка");
+                MessageBox.Show(ex.Message);
             }
         }
 

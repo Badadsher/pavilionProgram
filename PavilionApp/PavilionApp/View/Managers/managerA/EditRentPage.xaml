@@ -121,15 +121,17 @@
 
         <DataGrid x:Name="rentGrid" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="316,108,10,207" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Название" Width="*" Binding="{Binding NameTrade}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Статус" Width="*" Binding="{Binding Status}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Кол-во павильонов" Width="*" Binding="{Binding PavilionsCount}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Город" Width="*" Binding="{Binding City}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Стоимость" Width="*" Binding="{Binding PriceBuilding}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Этажность" Width="*" Binding="{Binding floor}"></DataGridTextColumn>
-                <DataGridTextColumn Header="коэффициент добавочной стоимости " Width="*" Binding="{Binding AddedValueTrade}"></DataGridTextColumn>
-            </DataGrid.Columns>
+                <DataGridTextColumn Header="Название" Width="*" Binding="{Binding CompanyName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Статус" Width="*" Binding="{Binding Number}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Кол-во павильонов" Width="*" Binding="{Binding Adress}"></DataGridTextColumn>
+              </DataGrid.Columns>
         </DataGrid>
         <TextBox HorizontalAlignment="Left" Margin="320,73,0,0" TextWrapping="Wrap" Text="Нажмите на ТЦ в столбце ниже и введите данные для изменения" VerticalAlignment="Top" Width="470" FontFamily="Arial" FontWeight="Bold" BorderBrush="#00ABADB3" Foreground="#FF78909C"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="namerent" HorizontalAlignment="Left" Margin="43,140,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="numberrent" HorizontalAlignment="Left" Margin="43,199,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
+        <TextBox Style="{DynamicResource TextBoxStyle1}" x:Name="adresrent" HorizontalAlignment="Left" Margin="43,265,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="216" Height="32"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,122,0,0" TextWrapping="Wrap" Text="Название компании" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,181,0,0" TextWrapping="Wrap" Text="Номер" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="51,247,0,0" TextWrapping="Wrap" Text="Адрес" VerticalAlignment="Top" Foreground="#FF37474F" FontFamily="Arial" FontWeight="Bold"/>
     </Grid>
 </Page>
